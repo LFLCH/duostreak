@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Duostreak",
+    "version": "1.0",
+    "description": "Helps you to finish a Duolingo course in a hurry",
+    "icons": {
+        "1024" :"/icons/logo.png",
+        "128": "/icons/logo128.png",
+        "48": "/icons/logo48.png",
+        "32": "/icons/logo32.png",
+        "16": "/icons/logo16.png"
+      },
+      "content_scripts": [
+        {
+          "js": ["content.js"],
+          "matches": [
+            "https://developer.chrome.com/docs/extensions/*",
+            "https://developer.chrome.com/docs/webstore/*",
+            "https://www.duolingo.com/*"
+          ]
+        }
+      ]
+  }
